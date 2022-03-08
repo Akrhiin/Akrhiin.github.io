@@ -68,6 +68,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     background-color: #161b22;
     font-family: Consolas, monaco, monospace;
@@ -77,21 +78,25 @@ body {
     display: inline;
     float: left;
     
-    margin: 1%;
-    padding-left: 0.5%;
+    margin: 0%;
+    padding-left: 0.6%;
+    padding-right: 0.5%;
 
     font-size: 2.2em;
 }
 
 #navbar ul {
-    margin: 0;
-    padding: 0;
+    display: flex;
+
+    margin-left: -18%;
 
     list-style-type: none;
 }
 
 #navbar li {
-    float: left;
+    float: right;
+
+    padding: 1%;
 }
 
 #navbar a {
@@ -102,13 +107,28 @@ body {
     color: #f0f6fc;
 }
 
+.nav-button {
+    height: 100%;
+}
+
+.nav-button:hover {
+    background-color: #0d1117;
+}
+
+.active {
+    height: 100%;
+
+    background-color: #0d1117;
+}
+
+
 /* -------------------------------------------------------------- */
 /* CONTENT STYLE: */
 
 .content {
     width: 65%;
-    margin-left: 1.4%;
-    margin-top: 6.25%;
+    margin-left: 0.8%;
+    margin-top: 3.7%;
     margin-bottom: 7%; /* remove once footer inserted */
 }
 
@@ -116,7 +136,7 @@ body {
 /* POST STYLE: */
 
 .post {
-    margin-top: 2.5%;
+    margin-top: 1.75%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     padding-left: 2.5%;
